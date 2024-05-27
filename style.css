@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #6a848d;
 }
 
 .logo-container {
@@ -18,7 +18,8 @@ body, html {
 }
 
 .logo {
-    width: 150px;
+    width: 300px;
     height: auto;
     opacity: 0;
+    filter: blur(10px);
 }
