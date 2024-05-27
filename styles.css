@@ -6,8 +6,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5d7881; /* Color de fondo de la imagen */
-    font-family: 'Times New Roman', Times, serif; /* Ajustar según la tipografía del logo */
+    background-color: #5d7881;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
