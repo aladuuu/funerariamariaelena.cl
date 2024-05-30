@@ -2483,7 +2483,10 @@
   padding-top: 20px!important;
 }
 .google-maps {
-  background-color: #b29240;
+  background-image: url(../images/mapa.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
   border: 2px solid #b29240;
   border-radius: 5px;
 }
