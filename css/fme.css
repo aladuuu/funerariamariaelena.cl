@@ -1015,40 +1015,40 @@
 }
 
 .slide-15 {
-  background-image: url('../images/Copia-de-1-2.webp');
+  background-image: url('../images/paz-y-tranquilidad.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .slide-15.a {
-  background-image: url('../images/Copia-de-1-2.webp');
+  background-image: url('../images/paz-y-tranquilidad.webp');
 }
 
 .slide-16 {
-  background-image: url('../images/Copia-de-6.webp');
+  background-image: url('../images/inocencia.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .slide-17 {
-  background-image: url('../images/BANNER-2.webp');
+  background-image: url('../images/te-aconsejamos.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .slide-17.c {
-  background-image: url('../images/Copia-de-44.webp');
+  background-image: url('../images/te-aconsejamos.webp');
 }
 
 .slide-18 {
-  background-image: url('../images/BANNER-3.webp');
+  background-image: url('../images/dando-las-manos.webp');
   background-position: 50%;
   background-size: cover;
   background-attachment: scroll;
 }
 
 .slide-18.d {
-  background-image: url('../images/manos-funeraria.webp');
+  background-image: url('../images/dando-las-manos.webp');
 }
 
 .column-38 {
@@ -1130,10 +1130,9 @@
 
 .section-12 {
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url('../images/BANNER-3.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url('../images/paz-y-tranquilidad.webp');
   background-position: 0 0, 50%;
   background-size: auto, cover;
-  background-attachment: scroll, fixed;
   padding: 60px 10px 80px;
 }
 
@@ -2285,101 +2284,6 @@
   align-self: auto;
   justify-self: auto;
 }
-
-.whatsapp {
-  background-color: #25d366;
-  width: 50%;
-}
-.telefono {
-  background-color: blue;
-  margin-top: 10px;
-  width: 50%;
-}
-.texto-planes {
-  margin-top: 10px;
-  font-size: large;
-  font-weight: 600;
-}
-.div-carousel {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-.carousel {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-.carousel-inner {
-  display: flex;
-}
-.carousel-inner2 {
-  display: flex;
-}
-.carousel-item {
-  box-sizing: border-box;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #fff;
-
-  height: 200px;
-  width: 200px;
-  flex-shrink: 0;
-}
-.carousel-item img {
-  max-width: 100px;
-  max-height: 100px;
-  padding-bottom: 10px;
-  margin: auto;
-}
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-.carousel-button2 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.785);
-  color: black;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-.carousel-button.prev {
-  left: 10px;
-}
-.carousel-button2.prev {
-  left: 10px;
-}
-.carousel-button.next {
-  right: 10px;
-}
-.carousel-button2.next {
-  right: 10px;
-}
-.texto-carousel {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-}
 .div-block-32 {
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/03.webp');
@@ -2472,6 +2376,142 @@
   background-color: #b29240;
   height: 2px;
 }
+
+.whatsapp {
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+}
+.telefono {
+  background-color: blue;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+}
+.accion {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+.texto-planes {
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+.div-carousel {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.carousel-inner0 {
+  display: flex;
+}
+.carousel-inner {
+  display: flex;
+}
+.carousel-inner2 {
+  display: flex;
+}
+.carousel-item {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+
+  height: 200px;
+  width: 200px;
+  flex-shrink: 0;
+}
+.carousel-item img {
+  max-width: 100px;
+  max-height: 100px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.carousel-button2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.785);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button2.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+.carousel-button2.next {
+  right: 10px;
+}
+.texto-carousel {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
 .card-planes {
   border: 2px solid #b29240;
   border-radius: 10px;
@@ -2535,4 +2575,96 @@
 }
 .texto-blanco {
   color: white;
+}
+@media (max-width: 600px) {
+  .text-block-41 {
+      font-size: 10;
+  }
+}
+@media (max-width: 600px) {
+  .heading-4 {
+      font-size: 25px;
+  }
+}
+.slide-19 {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-19.show {
+  opacity: 1;
+}
+.link-contacto {
+  color: white;
+  text-decoration: none;
+}
+.botoncito {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.planes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Montserrat, sans-serif;
+}
+.planes-container button {
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  border: 2px solid #b29240;
+  border-radius: 5px;
+  height: 200px;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+ul {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 15px;
+}
+ul li:before {
+  content: '\2713 ';
+  color: #b29240;
+}
+.popup-planes {
+  font-family: Montserrat, sans-serif;
+}
+.titulo-plan {
+  text-decoration: underline;
+  color: #b29240;
+}
+.katy {
+  background-image: url(../images/plan-katy.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+.palladio {
+  background-image: url(../images/plan-palladio.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+.montage {
+  background-image: url(../images/plan-montage.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+.antunez {
+  background-image: url(../images/plan-antunez.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
+.owen {
+  background-image: url(../images/plan-owen.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
 }
