@@ -1015,13 +1015,13 @@
 }
 
 .slide-15 {
-  background-image: url('../images/paz-y-tranquilidad.webp');
+  background-image: url('../images/abuelos-abrazando-flor.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .slide-15.a {
-  background-image: url('../images/paz-y-tranquilidad.webp');
+  background-image: url('../images/abuelos-abrazando-flor.webp');
 }
 
 .slide-16 {
@@ -1130,7 +1130,7 @@
 
 .section-12 {
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url('../images/paz-y-tranquilidad.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, .59), rgba(0, 0, 0, .59)), url('../images/abuelos-abrazando-flor.webp');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   padding: 60px 10px 80px;
