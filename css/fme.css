@@ -4356,7 +4356,9 @@ textarea.w-select {
   background-repeat: no-repeat; 
   border: 2px solid #b29240;
   border-radius: 5px;
+  width: 100%;
 }
+
 .whatsapp-button {
   position: fixed;
   top: 10px;
