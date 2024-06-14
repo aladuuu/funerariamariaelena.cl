@@ -4497,3 +4497,19 @@ ul li:before {
   background-position: center center;
   background-repeat: no-repeat; 
 }
+.negro {
+  color: #000;
+  border-color: #000;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.whatsapp-negro {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-bottom: 30px;
+}
+.texto-negro {
+  color: #000;
+  text-align: left;
+  line-height: 1.5;
+}
