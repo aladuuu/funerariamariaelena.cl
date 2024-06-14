@@ -4513,3 +4513,6 @@ ul li:before {
   text-align: left;
   line-height: 1.5;
 }
+.texto-blanco {
+  color: #fff;
+}
