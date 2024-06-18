@@ -4402,9 +4402,6 @@ textarea.w-select {
 .mt-3 {
   margin-top: 40px;
 }
-.texto-blanco {
-  color: white;
-}
 @media (max-width: 600px) {
   .text-block-41 {
       font-size: 10;
@@ -4515,6 +4512,7 @@ ul li:before {
 }
 .texto-blanco {
   color: #fff;
+  text-decoration: none;
 }
 .velorio-container {
   max-width: 800px;
