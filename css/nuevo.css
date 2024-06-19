@@ -1,0 +1,1060 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/montserrat-v26-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/montserrat-v26-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/montserrat-v26-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  src: url("fonts/montserrat-v26-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/montserrat-v26-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 600;
+  src: url("fonts/montserrat-v26-latin-600italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/montserrat-v26-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/montserrat-v26-latin-700italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 900;
+  src: url("fonts/montserrat-v26-latin-900italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/varela-round-v20-latin-regular.woff2") format("woff2");
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+.w-embed:before,
+.w-embed:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-embed:after {
+  clear: both;
+}
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+.w-container:before,
+.w-container:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-container:after {
+  clear: both;
+}
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.w-row:before,
+.w-row:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+.w-row:after {
+  clear: both;
+}
+.w-row .w-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.w-col .w-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+.w-col-1 {
+  width: 8.333333%;
+}
+.w-col-2 {
+  width: 16.666667%;
+}
+.w-col-3 {
+  width: 25%;
+}
+.w-col-4 {
+  width: 33.333333%;
+}
+.w-col-5 {
+  width: 41.666667%;
+}
+.w-col-6 {
+  width: 50%;
+}
+.w-col-7 {
+  width: 58.333333%;
+}
+.w-col-8 {
+  width: 66.666667%;
+}
+.w-col-9 {
+  width: 75%;
+}
+.w-col-10 {
+  width: 83.333333%;
+}
+.w-col-11 {
+  width: 91.666667%;
+}
+.w-col-12 {
+  width: 100%;
+}
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 0;
+  width: 147px;
+}
+.section {
+  text-align: center;
+  background-color: #fff;
+  padding: 60px 40px 70px;
+}
+.heading-4 {
+  color: #fff;
+  text-align: center;
+  text-transform: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.heading-4.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-3 {
+  background-color: #fcfcfc;
+  padding: 20px 10px 40px;
+}
+.section-4 {
+  padding: 20px 10px 40px;
+}
+.section-5 {
+  text-align: center;
+  background-color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Montserrat, sans-serif;
+}
+.section-6 {
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  padding-top: 0;
+  display: block;
+}
+.section-7 {
+  text-align: center;
+  background-color: #628396;
+  padding: 10px 10px 0;
+}
+.section-8 {
+  background-color: #202123;
+  padding: 63px 10px 95px;
+}
+.text-block-33 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.text-block-34 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.section-9 {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.text-block-36 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.section-10 {
+  background-color: #628396;
+  padding: 60px 10px 86px;
+}
+.heading-6 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.heading-6.white {
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+.slide-15 {
+  background-image: url(../images/abuelos-abrazando-flor.webp);
+  background-position: 50%;
+  background-size: cover;
+}
+.slide-15.a {
+  background-image: url(../images/abuelos-abrazando-flor.webp);
+}
+.slide-16 {
+  background-image: url(../images/girl-soplando-flor.webp);
+  background-position: 50%;
+  background-size: cover;
+}
+.slide-17 {
+  background-image: url(../images/te-aconsejamos.webp);
+  background-position: 50%;
+  background-size: cover;
+}
+.slide-17.c {
+  background-image: url(../images/te-aconsejamos.webp);
+}
+.slide-18 {
+  background-image: url(../images/dando-las-manos.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.slide-18.d {
+  background-image: url(../images/dando-las-manos.webp);
+}
+.section-11 {
+  background-color: #628396;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.text-field-2.white {
+  color: #fff;
+  word-break: normal;
+  overflow-wrap: normal;
+  -webkit-text-fill-color: inherit;
+  background-clip: border-box;
+  border-color: #fff;
+}
+.section-12 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)),
+    url(../images/abuelos-abrazando-flor.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  padding: 60px 10px 80px;
+}
+.heading-7 {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+.heading-7.planes {
+  color: #628396;
+}
+.text-block-40 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.text-block-41 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+.slide-19 {
+  padding-top: 137px;
+}
+.section-13 {
+  background-image: radial-gradient(circle, #fff, #b29240);
+  height: 2px;
+}
+.div-block-26 {
+  background-position: 50%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s;
+  display: flex;
+}
+.div-block-26._03 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/turbina-avion-volando.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  padding-top: 150px;
+  display: block;
+}
+.div-block-26._03.crmeacion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/anfora-funeral.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+}
+.div-block-26._01 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/urna-funeral.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  padding-top: 150px;
+  display: block;
+}
+.div-block-26._04 {
+  background-color: lightblue;
+  background-position: 0 0, 30%;
+  background-size: auto, cover;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-26._02 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/abuelos-abrazando.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  padding-top: 150px;
+  display: block;
+}
+.column-17 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.columns-20 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.text-block-42 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  position: static;
+}
+.text-block-42.destacado1 {
+  opacity: 0;
+  color: #fff;
+  background-color: rgba(158, 158, 158, 0);
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 255px 20px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 0.3s;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.text-block-42.destacado1:hover {
+  opacity: 1;
+  border-radius: 6px;
+}
+.heading-28 {
+  color: #fff;
+  text-align: center;
+  text-transform: none;
+  margin-top: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.div-block-27._03 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Salkantay.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 500px;
+  display: block;
+}
+.div-block-27._03.especial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../images/IMG_0193.webp);
+  background-position: 0 0, 30%;
+  height: 500px;
+}
+.div-block-27._03.prime {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
+    url(../images/IMG_02mujer-documentos.webp);
+}
+.div-block-27._01 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/1-plan-estandar.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 300px;
+  padding-top: 100px;
+  display: block;
+}
+.div-block-27._01:hover {
+  background-image: linear-gradient(#000, #000),
+    url(../images/machu-picchu.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+}
+.div-block-27._01._2 {
+  background-image: linear-gradient(to bottom, null, null),
+    url(../images/2-plan-tradicional.webp);
+}
+.div-block-27._01._3 {
+  background-image: linear-gradient(to bottom, null, null),
+    url(../images/3-plan-especial.webp);
+}
+.div-block-27._02 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Inca-Trail.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 500px;
+  display: block;
+}
+.div-block-27._02.estandar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/IMG_0164.webp);
+  height: 500px;
+}
+.div-block-27._02.tradicional {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
+    url(../images/IMG_0190.webp);
+  background-position: 0 0, 30%;
+  height: 500px;
+}
+.div-block-27._02.superior {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)),
+    url(../images/IMG_0174.webp);
+}
+.div-block-27._01 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/machu-picchu.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 400px;
+}
+.text-block-43.destacado1 {
+  opacity: 0;
+  color: #fff;
+  background-color: #9e9e9e;
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 10px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  transition: all 0.3s;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.text-block-43.destacado1:hover {
+  opacity: 1;
+  border-radius: 6px;
+}
+.text-block-44.destacado1 {
+  opacity: 0;
+  color: #fff;
+  text-align: left;
+  background-color: #628396;
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  transition: all 0.3s;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.text-block-44.destacado1:hover {
+  opacity: 1;
+  border-radius: 6px;
+}
+.div-block-34 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-luto-ataud.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 68px;
+}
+.div-block-40 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/anfora-funeral.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 80px;
+}
+.div-block-32 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/carroza-blanca.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  padding-top: 60px;
+}
+.div-block-33 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-documentos.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 68px;
+}
+.div-block-37 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/salas-velatorias.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 80px;
+}
+.div-block-35 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-lapiz-telefono.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 60px;
+}
+.text-block-46 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: x-large;
+  margin-bottom: 25px;
+}
+.div-block-38 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/servicio-de-responso.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 68px;
+}
+.div-block-36 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/jumbo-jet-volando-cielo.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 200px;
+  padding-top: 68px;
+}
+.column-51 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.div-block-32 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/carroza-blanca.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-33 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-documentos.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-34 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-luto-ataud.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-35 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/mujer-lapiz-telefono.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-36 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/jumbo-jet-volando-cielo.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-37 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/salas-velatorias.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-38 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/servicio-de-responso.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.div-block-40 {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/anfora-funeral.webp);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  height: 350px;
+  padding-top: 175px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.section-13 {
+  background-image: none;
+  background-color: #b29240;
+  height: 2px;
+}
+.whatsapp {
+  background-color: #0c642f;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+}
+.telefono {
+  background-color: blue;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+}
+.accion {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 1000px;
+  padding: 15px 20px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 96%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.carousel-inner0 {
+  display: flex;
+}
+.carousel-inner {
+  display: flex;
+}
+.carousel-inner2 {
+  display: flex;
+}
+.carousel-item {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  flex-shrink: 0;
+}
+.carousel-item img {
+  max-width: 100px;
+  max-height: 100px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.carousel-button2 {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  background: rgba(255, 255, 255, 0.785);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button2.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+.carousel-button2.next {
+  right: 10px;
+}
+.texto-carousel {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+.google-maps {
+  background-image: url(../images/mapa-ubicacion.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 2px solid #b29240;
+  border-radius: 5px;
+  width: 100%;
+}
+.whatsapp-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+.tel-button {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  z-index: 1000;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.tel-button img {
+  width: 30px;
+  height: 30px;
+}
+.tel-button:hover {
+  transform: scale(1.1);
+}
+.slide-19 {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide-19.show {
+  opacity: 1;
+}
+.link-contacto {
+  color: white;
+  text-decoration: none;
+}
+.botoncito {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.planes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Montserrat, sans-serif;
+}
+.planes-container button {
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  border: 2px solid #b29240;
+  border-radius: 5px;
+  height: 200px;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+ul {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 15px;
+}
+ul li:before {
+  content: "\2713 ";
+  color: #b29240;
+}
+.popup-planes {
+  font-family: Montserrat, sans-serif;
+}
+.titulo-plan {
+  text-decoration: underline;
+  color: #b29240;
+}
+.katy {
+  background-image: url(../images/plan-katy.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.palladio {
+  background-image: url(../images/plan-palladio.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.montage {
+  background-image: url(../images/plan-montage.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.antunez {
+  background-image: url(../images/plan-antunez.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.owen {
+  background-image: url(../images/plan-owen.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.negro {
+  color: #000;
+  border-color: #000;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.whatsapp-negro {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-bottom: 30px;
+}
+.texto-blanco {
+  color: #fff;
+  text-decoration: none;
+}
+.texto-negro {
+  color: #000;
+}
