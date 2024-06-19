@@ -4,9 +4,10 @@ const slides = document.querySelectorAll('.primer-carousel-slide');
 function showSlide(index) {
     const slide = slides[index];
     const img = slide.querySelector('img');
+    const src = slide.getAttribute('data-src');
 
-    if (img.getAttribute('src') === '') {
-        img.setAttribute('src', slide.getAttribute('data-src'));
+    if (img.getAttribute('src') === 'images/placeholder.png' && src) {
+        img.setAttribute('src', src);
         img.addEventListener('load', () => {
             activateSlide(index);
         });
@@ -41,12 +42,12 @@ function primerPrevSlide() {
 
 function autoplay() {
     primerNextSlide();
-    setTimeout(autoplay, 7000);
+    setTimeout(autoplay, 5000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
-    setTimeout(autoplay, 7000);
+    setTimeout(autoplay, 5000);
 });
 
 
