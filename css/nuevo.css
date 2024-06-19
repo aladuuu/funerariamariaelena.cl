@@ -95,6 +95,49 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
@@ -314,34 +357,41 @@ img {
   font-weight: 600;
 }
 .slide-15 {
-  background-image: url(../images/abuelos-abrazando-flor.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/abuelos-abrazando-flor.webp);
   background-position: 50%;
   background-size: cover;
 }
 .slide-15.a {
-  background-image: url(../images/abuelos-abrazando-flor.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/abuelos-abrazando-flor.webp);
 }
 .slide-16 {
-  background-image: url(../images/girl-soplando-flor.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/girl-soplando-flor.webp);
   background-position: 50%;
   background-size: cover;
 }
 .slide-17 {
-  background-image: url(../images/te-aconsejamos.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/te-aconsejamos.webp);
   background-position: 50%;
   background-size: cover;
 }
 .slide-17.c {
-  background-image: url(../images/te-aconsejamos.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/te-aconsejamos.webp);
 }
 .slide-18 {
-  background-image: url(../images/dando-las-manos.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/dando-las-manos.webp);
   background-position: 50%;
   background-size: cover;
   background-attachment: scroll;
 }
 .slide-18.d {
-  background-image: url(../images/dando-las-manos.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/dando-las-manos.webp);
 }
 .section-11 {
   background-color: #628396;
@@ -399,6 +449,7 @@ img {
   background-size: cover;
   justify-content: center;
   align-items: center;
+  text-align: center;
   max-width: 100%;
   height: 400px;
   padding-left: 5px;
@@ -419,6 +470,8 @@ img {
     url(../images/anfora-funeral.webp);
   background-position: 0 0, 50%;
   background-size: auto, cover;
+  padding-top: 150px;
+  display: block;
 }
 .div-block-26._01 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -805,7 +858,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
-  width: 96%;
+  width: 85%;
   max-width: 600px;
 }
 .telefono {
@@ -821,7 +874,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
-  width: 96%;
+  width: 85%;
   max-width: 600px;
 }
 .accion {
@@ -836,7 +889,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
-  width: 96%;
+  width: 85%;
   max-width: 600px;
   margin-top: 30px;
 }
@@ -966,6 +1019,10 @@ img {
 .slide-19.show {
   opacity: 1;
 }
+.div-contacto {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 .link-contacto {
   color: white;
   text-decoration: none;
@@ -1046,6 +1103,13 @@ ul li:before {
   margin: auto;
   margin-bottom: 30px;
 }
+.dorado {
+    color: #fff;
+    background-color: #b29240;
+    border-color: #fff;
+    margin: auto;
+    margin-bottom: 30px;
+  }
 .whatsapp-negro {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin: auto;
@@ -1059,50 +1123,236 @@ ul li:before {
   color: #000;
 }
 .velorio-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.velorio-title {
+  text-align: center;
+  font-size: 2em;
+  color: #4a4a4a;
+}
+.velorio-content {
+  text-align: left;
+}
+.velorio-accordion {
+  margin-bottom: 20px;
+}
+.velorio-accordion-item {
+  border-bottom: 1px solid #fff;
+}
+.velorio-accordion-item button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background-color: #628396;
+  border-radius: 5px;
+  color: #fff;
+  border: solid 1px #b29240;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+.velorio-accordion-item button:hover {
+  background-color: #628396d7;
+}
+.velorio-accordion-item .velorio-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+.faq-titulos {
+  font-size: large;
+  text-align: center;
+  margin: 1px;
+}
+.margen-5px {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.columns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: space-between;
+  background-color: #b29240;
+}
+
+.column-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 23%;
+  height: 400px;
+  background-position: 50%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s;
+  display: flex;
+}
+
+.column-item._01 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/urna-funeral.webp");
+  padding-top: 150px;
+}
+
+.column-item._02 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/abuelos-abrazando.webp");
+  padding-top: 150px;
+}
+
+.column-item._03 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/turbina-avion-volando.webp");
+  padding-top: 150px;
+}
+
+.column-item.crmeacion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/anfora-funeral.webp");
+  padding-top: 150px;
+}
+
+.div-block-26 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+}
+
+.heading-28 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.text-block-40 {
+  margin-bottom: 20px;
+}
+
+.text-block-42 {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .column-item {
+    max-width: 48%;
   }
-  .velorio-title {
-    text-align: center;
-    font-size: 2em;
-    color: #4a4a4a;
+}
+
+@media (max-width: 480px) {
+  .column-item {
+    max-width: 100%;
   }
-  .velorio-content {
-    text-align: left;
+}
+.seccion-primer-carrusel {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primer-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primer-carousel-slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.primer-carousel-slide.primer-active {
+  display: flex;
+}
+
+.primer-carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.primer-carousel-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.primer-carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.primer-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.primer-carousel-control.primer-prev {
+  left: 10px;
+}
+
+.primer-carousel-control.primer-next {
+  right: 10px;
+}
+.titulo-primer-carrusel {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.texto-primer-carrusel {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
   }
-  .velorio-accordion {
-    margin-bottom: 20px;
-  }
-  .velorio-accordion-item {
-    border-bottom: 1px solid #fff;
-  }
-  .velorio-accordion-item button {
-    width: 100%;
-    padding: 15px;
-    text-align: left;
-    background-color: #628396;
-    border-radius: 5px;
-    color: #fff;
-    border: solid 1px #b29240;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-  }
-  .velorio-accordion-item button:hover {
-    background-color: #628396d7;
-  }
-  .velorio-accordion-item .velorio-content {
-    display: none;
-    padding: 15px;
-    background-color: #fff;
-  }
-  .faq-titulos {
-    font-size: large;
-    text-align: center;
-    margin: 1px;
+  
+  .fade-in.visible {
+    opacity: 1;
   }

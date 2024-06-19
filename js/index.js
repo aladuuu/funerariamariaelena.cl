@@ -1,3 +1,55 @@
+let currentIndex = 0;
+const slides = document.querySelectorAll('.primer-carousel-slide');
+
+function showSlide(index) {
+    const slide = slides[index];
+    const img = slide.querySelector('img');
+
+    if (img.getAttribute('src') === '') {
+        img.setAttribute('src', slide.getAttribute('data-src'));
+        img.addEventListener('load', () => {
+            activateSlide(index);
+        });
+    } else {
+        activateSlide(index);
+    }
+}
+
+function activateSlide(index) {
+    slides.forEach((slide, i) => {
+        const content = slide.querySelector('.primer-carousel-content');
+        slide.classList.remove('primer-active');
+        content.classList.remove('visible');
+        if (i === index) {
+            slide.classList.add('primer-active');
+            setTimeout(() => {
+                content.classList.add('visible');
+            }, 50);
+        }
+    });
+}
+
+function primerNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function primerPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+function autoplay() {
+    primerNextSlide();
+    setTimeout(autoplay, 7000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentIndex);
+    setTimeout(autoplay, 7000);
+});
+
+
 $(document).ready(function () {
   $(".carousel-inner").slick({
     infinite: true,
@@ -58,26 +110,6 @@ $(document).ready(function () {
       },
     ],
   });
-
-  $(".carousel-inner0").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: ".carousel-button3.prev",
-    nextArrow: ".carousel-button3.next",
-  });
-
-  $(".carousel-inner0").on(
-    "afterChange",
-    function (event, slick, currentSlide) {
-      $(".slide-19").removeClass("show");
-      setTimeout(function () {
-        $(".slick-current .slide-19").addClass("show");
-      }, 0);
-    }
-  );
 
   setTimeout(function () {
     $(".slick-current .slide-19").addClass("show");
