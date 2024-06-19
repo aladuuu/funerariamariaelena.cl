@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(autoplay, 5000);
 });
 
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('show-menu');
+});
 
 $(document).ready(function () {
   $(".carousel-inner").slick({

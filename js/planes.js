@@ -1,3 +1,9 @@
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('show-menu');
+});
+
 function showPopup(title, listContent, image) {
     Swal.fire({
       title: title,
