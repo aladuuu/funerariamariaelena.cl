@@ -398,11 +398,9 @@ p {
 }
 .section-12 {
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)),
-    url(../images/abuelos-abrazando-flor.webp);
-  background-position: 0 0, 50%;
-  background-size: auto, cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59));
   padding: 60px 10px 80px;
+  position: relative;
 }
 .heading-7 {
   color: #000;
@@ -1058,31 +1056,26 @@ ul li:before {
   color: #b29240;
 }
 .katy {
-  background-image: url(../images/plan-katy.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .palladio {
-  background-image: url(../images/plan-palladio.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .montage {
-  background-image: url(../images/plan-montage.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .antunez {
-  background-image: url(../images/plan-antunez.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .owen {
-  background-image: url(../images/plan-owen.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1386,4 +1379,33 @@ ul li:before {
 
 .show-menu {
     display: flex;
+}
+.lazy-background {
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: #b29240;
+}
+.lazy-background2 {
+  background-position: 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #b29240;
+}
+.lazy-background3 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  background-color: #b29240;
 }
