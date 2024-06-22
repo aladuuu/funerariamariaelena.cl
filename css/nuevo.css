@@ -1087,7 +1087,7 @@ ul li:before {
   margin-bottom: 30px;
 }
 .dorado {
-  color: #fff;
+  color: #000;
   background-color: #b29240;
   border-color: #fff;
   margin: auto;
@@ -1407,5 +1407,5 @@ ul li:before {
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.3s;
-  background-color: #4a6572;
+  background-color: #b29240;
 }
