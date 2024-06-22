@@ -1389,7 +1389,7 @@ ul li:before {
   align-items: center;
   text-align: center;
   transition: all 0.3s;
-  background-color: #b29240;
+  background-color: #4a6572;
 }
 .lazy-background2 {
   background-position: 50%;
@@ -1400,12 +1400,12 @@ ul li:before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #b29240;
+  background-color: #4a6572;
 }
 .lazy-background3 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.3s;
-  background-color: #b29240;
+  background-color: #4a6572;
 }
