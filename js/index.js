@@ -64,76 +64,7 @@ menuIcon.addEventListener("click", () => {
   menu.classList.toggle("show-menu");
 });
 
-// Inicializar el primer carrusel con Slick
 $(document).ready(function () {
-  $(".carousel-inner").slick({
-    lazyLoad: "ondemand",
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: ".carousel-button.prev",
-    nextArrow: ".carousel-button.next",
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  // Inicializar el segundo carrusel con Slick
-  $(".carousel-inner2").slick({
-    lazyLoad: "ondemand",
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: ".carousel-button2.prev",
-    nextArrow: ".carousel-button2.next",
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  // Mostrar el contenido de la diapositiva actual con animación para el primer carrusel
-  setTimeout(function () {
-    $(".slick-current .slide-19").addClass("show");
-  }, 0);
-
   // Desplazamiento suave para los enlaces a la sección de contacto
   $('a[href^="#contacto"]').on("click", function (event) {
     event.preventDefault();
