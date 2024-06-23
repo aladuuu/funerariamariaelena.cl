@@ -343,3 +343,31 @@ const owen = `
     <li>Trámites Registro civil</li>
   </ul>
 `;
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 3,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 3
+    },
+    // when window width is >= 480px
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 3
+    },
+    // when window width is >= 640px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 3
+    }
+  },
+});
