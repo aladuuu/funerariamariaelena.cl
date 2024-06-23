@@ -67,6 +67,7 @@ menuIcon.addEventListener("click", () => {
 // Inicializar el primer carrusel con Slick
 $(document).ready(function () {
   $(".carousel-inner").slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -98,6 +99,7 @@ $(document).ready(function () {
 
   // Inicializar el segundo carrusel con Slick
   $(".carousel-inner2").slick({
+    lazyLoad: 'ondemand',
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
