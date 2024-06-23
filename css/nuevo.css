@@ -70,14 +70,6 @@
   src: url("fonts/montserrat-v26-latin-900italic.woff2") format("woff2");
 }
 
-@font-face {
-  font-display: swap;
-  font-family: "Varela Round";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/varela-round-v20-latin-regular.woff2") format("woff2");
-}
-
 html {
   height: 100%;
 }
@@ -201,6 +193,15 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+.heading-5 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
 }
 .heading-6 {
   color: #fff;
@@ -504,7 +505,7 @@ p {
   border: 1px solid #fff;
   border-radius: 1000px;
   padding: 15px 20px;
-  font-family: Varela Round, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
@@ -520,7 +521,7 @@ p {
   border: 1px solid #fff;
   border-radius: 1000px;
   padding: 15px 20px;
-  font-family: Varela Round, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
@@ -535,7 +536,7 @@ p {
   border: 1px solid #fff;
   border-radius: 1000px;
   padding: 15px 20px;
-  font-family: Varela Round, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   display: inline-block;
@@ -684,7 +685,8 @@ p {
 .planes-container button {
   padding: 10px 20px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
   cursor: pointer;
   color: white;
   border: 2px solid #b29240;
@@ -1023,5 +1025,5 @@ ul li:before {
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.3s;
-  background-color: #b29240;
+  background-color: #4a6572;
 }
