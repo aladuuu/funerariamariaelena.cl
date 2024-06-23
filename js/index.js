@@ -67,7 +67,7 @@ menuIcon.addEventListener("click", () => {
 // Inicializar el primer carrusel con Slick
 $(document).ready(function () {
   $(".carousel-inner").slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
   // Inicializar el segundo carrusel con Slick
   $(".carousel-inner2").slick({
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -194,23 +194,27 @@ document.addEventListener("DOMContentLoaded", function () {
   lazyLoad();
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var lazyBackground = document.getElementById("lazy-background2");
   var img = new Image();
   img.src = "../images/abuelos-abrazando-flor.webp";
-  img.onload = function() {
+  img.onload = function () {
     lazyBackground.style.backgroundImage = "url('" + img.src + "')";
   };
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const lazyBackgrounds = document.querySelectorAll('.lazy-background3');
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyBackgrounds = document.querySelectorAll(".lazy-background3");
 
   const lazyLoad = () => {
-    lazyBackgrounds.forEach(lazyBackground => {
-      if (lazyBackground.getBoundingClientRect().top <= window.innerHeight && lazyBackground.getBoundingClientRect().bottom >= 0 && getComputedStyle(lazyBackground).display !== "none") {
+    lazyBackgrounds.forEach((lazyBackground) => {
+      if (
+        lazyBackground.getBoundingClientRect().top <= window.innerHeight &&
+        lazyBackground.getBoundingClientRect().bottom >= 0 &&
+        getComputedStyle(lazyBackground).display !== "none"
+      ) {
         lazyBackground.style.backgroundImage = lazyBackground.dataset.bg;
-        lazyBackground.classList.remove('lazy-background3');
+        lazyBackground.classList.remove("lazy-background3");
       }
     });
 
@@ -343,31 +347,26 @@ const owen = `
     <li>Trámites Registro civil</li>
   </ul>
 `;
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
   loop: true,
   autoplay: {
     delay: 5000,
   },
   slidesPerView: 1,
   spaceBetween: 3,
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     600: {
       slidesPerView: 1,
-      spaceBetween: 3
+      spaceBetween: 3,
     },
-    // when window width is >= 480px
     900: {
       slidesPerView: 2,
-      spaceBetween: 3
+      spaceBetween: 3,
     },
-    // when window width is >= 640px
     1200: {
       slidesPerView: 3,
-      spaceBetween: 3
-    }
+      spaceBetween: 3,
+    },
   },
 });
