@@ -99,8 +99,9 @@
       name="DC.rights"
       content="Copyright 2024 Casa Funeraria María Elena"
     />
-    <link href="css/nuevo.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link rel="preload" href="css/nuevo.css" as="style" />
+    <link rel="stylesheet" href="css/nuevo.css" />
+    </head>
   <body>
     <section>
       <div class="navegador">
@@ -299,7 +300,7 @@
     <a href="tel://56942001507" class="tel-button" target="_blank">
       <img src="images/icono-telefono.webp" alt="Teléfono" />
     </a>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/planes.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/planes.js"></script>
   </body>
 </html>
