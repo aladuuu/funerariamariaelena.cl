@@ -16,3 +16,7 @@ document.querySelectorAll('.velorio-accordion-item button').forEach(button => {
         }
     });
   });
+  document.querySelector('.up-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
+  });

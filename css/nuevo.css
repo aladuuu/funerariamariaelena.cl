@@ -229,6 +229,12 @@ p {
   padding: 60px 10px 80px;
   position: relative;
 }
+.section-planes {
+  text-align: center;
+  padding: 60px 10px 80px;
+  position: relative;
+  height: 800px;
+}
 .heading-7 {
   color: #000;
   margin-top: 0;
@@ -239,6 +245,7 @@ p {
 }
 .heading-7.planes {
   color: #628396;
+  font-weight: 700;
 }
 .text-block-40 {
   color: #fff;
@@ -529,7 +536,7 @@ p {
   max-width: 600px;
 }
 .accion {
-  background-color: rgba(0, 0, 255, 0);
+  background-color: rgba(255, 255, 255, 0.232);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -659,6 +666,24 @@ p {
   height: 30px;
 }
 .tel-button:hover {
+  transform: scale(1.1);
+}
+.up-button {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.313);
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.up-button img {
+  width: 40px;
+  height: 40px;
+}
+.up-button:hover {
   transform: scale(1.1);
 }
 .slide-19 {
@@ -1091,8 +1116,50 @@ ul li:before {
   font-size: 26px;
   font-weight: 600;
   line-height: 34px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, rgba(237, 6, 6, 0) 0%, rgba(1, 1, 1, 0.925) 40%, rgba(0, 0, 0, 0.925) 60%, rgba(237, 6, 6, 0) 100%);
 }
 .fondo-dorado {
   background-color: #b29240;
+}
+.fondo-oscurecido {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(to right, rgba(237, 6, 6, 0) 0%, rgba(1, 1, 1, 0.925) 40%, rgba(0, 0, 0, 0.925) 60%, rgba(237, 6, 6, 0) 100%);
+}
+.texto-planes {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.container-planes {
+  background-color: #b29240;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 50px;
+  border: #fff 1px solid;
+}
+.boton-planes {
+  background-color: #fff;
+  color: #000;
+  border: #b29240 2px solid;
+}
+.descripcion-planes {
+  color: #000;
+  text-align:left;
+}
+.ver-mas {
+  background: linear-gradient(to right, rgba(237, 6, 6, 0) 0%, rgba(1, 1, 1, 0.925) 40%, rgba(0, 0, 0, 0.925) 60%, rgba(237, 6, 6, 0) 100%);
+  width: 100%;
+  margin: 0;
+}
+.separador {
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .separador {
+    width: 100%;
+  }
 }

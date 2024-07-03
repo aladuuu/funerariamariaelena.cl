@@ -104,16 +104,16 @@
   </head>
   <body>
     <section>
-      <div class="navegador">
+      <div class="navegador" id="top">
         <div class="menu-icon">&#9776;</div>
         <a href="index.html" class="logo-container">
           <img src="images/logo.webp" alt="Logo Funeraria Maria Elena" />
         </a>
         <div class="right-space"></div>
         <div class="menu">
-          <a href="index.html">INICIO</a>
-          <a href="planes.html">PLANES</a>
-          <a href="faq.html">PREGUNTAS FRECUENTES</a>
+          <a href="/index.html">INICIO</a>
+          <a href="/planes/index.html">PLANES</a>
+          <a href="/faq.html">PREGUNTAS FRECUENTES</a>
         </div>
       </div>
     </section>
@@ -207,7 +207,7 @@
             <div class="text-block-40">_________</div>
             <div class="w-inline-block">
               <div class="text-block-42 texto-blanco margen-5px">
-                <p>
+                <p class="fondo-oscurecido">
                   Prepara un funeral digno sin preocuparte por los trámites en
                   estos momentos difíciles.
                 </p>
@@ -225,7 +225,7 @@
             <div class="text-block-40">_________</div>
             <div class="w-inline-block">
               <div class="text-block-42 texto-blanco">
-                <p>
+                <p class="fondo-oscurecido">
                   Planifica y prepara por adelantado para una despedida especial
                   y completamente personalizada.
                 </p>
@@ -243,7 +243,7 @@
             <div class="text-block-40">_________</div>
             <div class="w-inline-block">
               <div class="text-block-42 texto-blanco margen-5px">
-                <p>
+                <p class="fondo-oscurecido">
                   Repatria los restos de tu familiar desde cualquier parte del
                   mundo de manera rápida.
                 </p>
@@ -261,7 +261,7 @@
             <div class="text-block-40">_________</div>
             <div class="w-inline-block">
               <div class="text-block-42 texto-blanco margen-5px">
-                <p>
+                <p class="fondo-oscurecido">
                   Ofrecemos servicios funerarios y de cremación para sus seres
                   queridos o familiar.
                 </p>
@@ -363,47 +363,20 @@
     </section>
     <section class="section-13"></section>
     <section class="section-13"></section>
-    <section class="section">
-      <h3 class="heading-7 planes">Nuestros Planes</h3>
-      <div class="planes-container">
-        <a href="/planes.html" class="accion negro whatsapp-negro"
-          >Ver detalle planes</a
-        >
-        <button
-          class="katy whatsapp-negro lazy-background3"
-          data-bg="url('images/plan-katy.webp')"
-          onclick="showPopup(`<p class='titulo-plan'>Plan Katy</p>`, katy)"
-        >
-          VER PLAN KATY
-        </button>
-        <button
-          class="palladio whatsapp-negro lazy-background3"
-          data-bg="url('images/plan-palladio.webp')"
-          onclick="showPopup(`<p class='titulo-plan'>Plan Palladio</p>`, palladio)"
-        >
-          VER PLAN PALLADIO
-        </button>
-        <button
-          class="montage whatsapp-negro lazy-background3"
-          data-bg="url('images/plan-montage.webp')"
-          onclick="showPopup(`<p class='titulo-plan'>Plan Montage</p>`, montage)"
-        >
-          VER PLAN MONTAGE
-        </button>
-        <button
-          class="antunez whatsapp-negro lazy-background3"
-          data-bg="url('images/plan-antunez.webp')"
-          onclick="showPopup(`<p class='titulo-plan'>Plan Antunez</p>`, antunez)"
-        >
-          VER PLAN ANTUNEZ
-        </button>
-        <button
-          class="owen whatsapp-negro lazy-background3"
-          data-bg="url('images/plan-owen.webp')"
-          onclick="showPopup(`<p class='titulo-plan'>Plan Owen</p>`, owen)"
-        >
-          VER PLAN OWEN
-        </button>
+    <section class="section-11">
+      <div class="text-block-41">
+        <h2 class="heading-7 texto-blanco">Nuestros Planes</h2>
+        <div class="container-planes">
+          <h3 class="heading-6 white">
+            Planes variados para cada necesidad.
+          </h3>
+          <p class="texto-planes">En Casa Funeraria María Elena, entendemos y nos comprometemos a
+            brindar servicios funerarios personalizados que honren la memoria de
+            sus seres queridos.</p>
+          <a href="/planes/index.html" class="accion whatsapp-negro boton-planes"
+            >Ver detalle planes</a
+          >
+        </div>
       </div>
     </section>
     <section class="section-13"></section>
@@ -535,10 +508,11 @@
     <a href="tel://56942001507" class="tel-button" target="_blank">
       <img src="images/icono-telefono.webp" alt="Teléfono" loading="lazy" />
     </a>
+    <a href="#top" class="up-button">
+      <img src="images/up.webp" alt="chevron up" loading="lazy" />
+    </a>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/sweetalert2.min.css" />
     <script defer src="js/swiper-bundle.min.js"></script>
-    <script defer src="js/sweetalert2.all.min.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/index.js"></script>
   </body>
